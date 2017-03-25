@@ -1,5 +1,6 @@
+[![npm](https://img.shields.io/npm/v/martian-cli.svg) ![npm](https://img.shields.io/npm/dm/martian-cli.svg)](https://www.npmjs.com/package/martian-cli)
 [![GitHub release](https://img.shields.io/github/release/osmartian/martian-cli.svg)](https://github.com/osmartian/martian-cli/releases)  [![GitHub issues](https://img.shields.io/github/issues/osmartian/martian-cli.svg)](https://github.com/osmartian/martian-cli/issues)
-![Node Version](https://img.shields.io/node/v/weex-toolkit.svg "Node Version")
+![Node Version](https://img.shields.io/node/v/martian-cli.svg "Node Version")
 
 
 # Martian Template
