@@ -2,4 +2,5 @@
 
 const xtoolkit = require('xtoolkit')
 xtoolkit.command('init:weex', 'local:../src/init/weex/index.js')
+xtoolkit.command('init:vue', 'local:../src/init/vue/index.js')
 xtoolkit.version(require('../package.json').version)

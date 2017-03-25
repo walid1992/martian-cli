@@ -1,7 +1,7 @@
 /**
  * @author walid
  * @date 2016/03/25
- * @description Weex生成工程工具类
+ * @description Vue生成工程工具类
  */
 
 const prompt = require('prompt')
@@ -74,7 +74,7 @@ function createProject(name, dirpath) {
  */
 function copy(name, dirpath) {
   const files = []
-  const src = path.join(__dirname, '../../..', 'template/weex')
+  const src = path.join(__dirname, '../../..', 'template/vue')
   walk(src, files)
   files.forEach(file => {
     const relative = path.relative(src, file)

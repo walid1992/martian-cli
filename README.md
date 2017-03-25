@@ -9,8 +9,9 @@ Frame template for [martian-cli](https://github.com/osmartian/martian-cli.git).
 
 
 # Install
+
 ```
-$ npm install -g weex-toolkit
+$ npm install -g martian-cli
 ```
 
 # Usage 
