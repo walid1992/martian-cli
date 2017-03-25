@@ -1,11 +1,11 @@
-package com.siyuan.index.app;
+package com.siyuan.weex.app;
 
 
 import android.app.Application;
 
-import com.siyuan.index.index.ImageAdapter;
-import com.taobao.index.InitConfig;
-import com.taobao.index.WXSDKEngine;
+import com.siyuan.weex.weex.ImageAdapter;
+import com.taobao.weex.InitConfig;
+import com.taobao.weex.WXSDKEngine;
 
 /**
  * @Author : Walid

@@ -1,4 +1,4 @@
-package com.siyuan.index.ui.page;
+package com.siyuan.weex.ui.page;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -21,22 +21,22 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.siyuan.index.R;
-import com.siyuan.index.index.WXAnalyzerDelegate;
-import com.siyuan.index.index.constants.Constants;
-import com.siyuan.index.index.https.HotRefreshManager;
-import com.siyuan.index.index.https.WXHttpManager;
-import com.siyuan.index.index.https.WXHttpTask;
-import com.siyuan.index.index.https.WXRequestListener;
-import com.taobao.index.RenderContainer;
-import com.taobao.index.WXSDKEngine;
-import com.taobao.index.WXSDKInstance;
-import com.taobao.index.appfram.navigator.IActivityNavBarSetter;
-import com.taobao.index.common.IWXDebugProxy;
-import com.taobao.index.common.WXRenderStrategy;
-import com.taobao.index.ui.component.NestedContainer;
-import com.taobao.index.utils.WXFileUtils;
-import com.taobao.index.utils.WXLogUtils;
+import com.siyuan.weex.R;
+import com.siyuan.weex.weex.WXAnalyzerDelegate;
+import com.siyuan.weex.weex.constants.Constants;
+import com.siyuan.weex.weex.https.HotRefreshManager;
+import com.siyuan.weex.weex.https.WXHttpManager;
+import com.siyuan.weex.weex.https.WXHttpTask;
+import com.siyuan.weex.weex.https.WXRequestListener;
+import com.taobao.weex.RenderContainer;
+import com.taobao.weex.WXSDKEngine;
+import com.taobao.weex.WXSDKInstance;
+import com.taobao.weex.appfram.navigator.IActivityNavBarSetter;
+import com.taobao.weex.common.IWXDebugProxy;
+import com.taobao.weex.common.WXRenderStrategy;
+import com.taobao.weex.ui.component.NestedContainer;
+import com.taobao.weex.utils.WXFileUtils;
+import com.taobao.weex.utils.WXLogUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
@@ -106,7 +106,7 @@ public class WxPageActivity extends WXBaseActivity implements Handler.Callback, 
             loadWXfromService(mUri.toString());
             startHotRefresh();
         } else if (TextUtils.equals("http", mUri.getScheme()) || TextUtils.equals("https", mUri.getScheme())) {
-            // if url has key "_wx_tpl" then get index bundle js
+            // if url has key "_wx_tpl" then get weex bundle js
             String weexTpl = mUri.getQueryParameter(Constants.WEEX_TPL_KEY);
             String url = TextUtils.isEmpty(weexTpl) ? mUri.toString() : weexTpl;
             loadWXfromService(url);

@@ -6,7 +6,7 @@
 
 export default {
   init() {
-    // index.registerModule('api', require('utils/api'))
-    // index.registerModule('route', require('constants/route'))
+    // weex.registerModule('api', require('utils/api'))
+    // weex.registerModule('route', require('constants/route'))
   }
 }

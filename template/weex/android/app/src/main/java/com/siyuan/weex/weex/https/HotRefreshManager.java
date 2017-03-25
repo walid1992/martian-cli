@@ -1,10 +1,10 @@
-package com.siyuan.index.index.https;
+package com.siyuan.weex.weex.https;
 
 import android.os.Handler;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.siyuan.index.index.constants.Constants;
+import com.siyuan.weex.weex.constants.Constants;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;

@@ -5,7 +5,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion '25.0.2'
     defaultConfig {
-        applicationId "com.siyuan.index"
+        applicationId "com.siyuan.weex"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1

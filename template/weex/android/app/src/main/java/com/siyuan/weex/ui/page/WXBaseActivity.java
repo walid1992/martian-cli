@@ -1,8 +1,8 @@
-package com.siyuan.index.ui.page;
+package com.siyuan.weex.ui.page;
 
 import android.support.v7.app.AppCompatActivity;
 
-import com.taobao.index.IWXRenderListener;
+import com.taobao.weex.IWXRenderListener;
 
 /**
  * @Author : walid

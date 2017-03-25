@@ -1,4 +1,4 @@
-package com.siyuan.index.ui.page;
+package com.siyuan.weex.ui.page;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -6,11 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import com.siyuan.index.R;
-import com.siyuan.index.index.constants.Constants;
-import com.taobao.index.WXSDKInstance;
-import com.taobao.index.common.WXRenderStrategy;
-import com.taobao.index.utils.WXFileUtils;
+import com.siyuan.weex.R;
+import com.siyuan.weex.weex.constants.Constants;
+import com.taobao.weex.WXSDKInstance;
+import com.taobao.weex.common.WXRenderStrategy;
+import com.taobao.weex.utils.WXFileUtils;
 
 import java.util.HashMap;
 import java.util.Map;

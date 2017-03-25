@@ -74,7 +74,7 @@ function createProject(name, dirpath) {
  */
 function copy(name, dirpath) {
   const files = []
-  const src = path.join(__dirname, '../../..', 'template')
+  const src = path.join(__dirname, '../../..', 'template/weex')
   walk(src, files)
   files.forEach(file => {
     const relative = path.relative(src, file)

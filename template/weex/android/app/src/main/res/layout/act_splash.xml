@@ -4,7 +4,7 @@
     android:id="@+id/act_splash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.siyuan.index.ui.page.SplashActivity">
+    tools:context="com.siyuan.weex.ui.page.SplashActivity">
 
     <ImageView
         android:layout_width="match_parent"

@@ -253,7 +253,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = index;
+				ORGANIZATIONNAME = weex;
 				TargetAttributes = {
 					0E93F43A1E691E3C009FFDEC = {
 						CreatedOnToolsVersion = 8.2.1;

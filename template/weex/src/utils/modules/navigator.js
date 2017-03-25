@@ -6,7 +6,7 @@
 
 import qs from 'qs'
 import ip from 'config'
-import instance from 'utils/index/instance'
+import instance from 'utils/weex/instance'
 import route from 'constants/route'
 let navigator = weex.requireModule('navigator')
 
@@ -27,11 +27,11 @@ function getBaseUrl() {
     }
     nativeBase = `http://${host}/dist/weex/`
   }
-  let h5Base = './index.html?page=./dist/web/'
+  let h5Base = './weex.html?page=./dist/web/'
   // // in Browser or WebView
   let inBrowserOrWebView = typeof window === 'object'
   return inBrowserOrWebView ? h5Base : nativeBase
-  // return inBrowserOrWebView ? './index.html?page=./dist/web/' : `http://${ip}:12580/dist/index/`
+  // return inBrowserOrWebView ? './weex.html?page=./dist/web/' : `http://${ip}:12580/dist/weex/`
 }
 
 function pushWeb(url, params) {

@@ -12,7 +12,7 @@
       return {
         title: 'OsMartian - WebView',
         canGoBack: false,
-        url: getQueryStringByName('url') || 'https://index-project.io/cn/'
+        url: getQueryStringByName('url') || 'https://weex-project.io/cn/'
       }
     },
 

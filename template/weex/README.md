@@ -1,6 +1,6 @@
-# index-frame
+# weex-frame
 
-> index 基于vue2.0开发框架，包括三端集成、组件库提供、index api封装~
+> weex 基于vue2.0开发框架，包括三端集成、组件库提供、weex api封装~
 
 # 工作原理
 
@@ -10,7 +10,7 @@
 
 # 开发环境搭建
 
-## index 开发环境搭建
+## weex 开发环境搭建
 
 [关于weex开发环境搭建问题见官方文档](https://weex.apache.org/cn/guide/set-up-env.html)
 
@@ -38,7 +38,7 @@
 
 ##  提供开源组件库OSC
 
-index-frame提供了，开源组件库OSC，降低开发者入门门槛~
+weex-frame提供了，开源组件库OSC，降低开发者入门门槛~
 
 **注：**
 
@@ -54,7 +54,7 @@ index-frame提供了，开源组件库OSC，降低开发者入门门槛~
     "vue-router": "^2.1.1",
     "vuex": "^2.1.1",
     "vuex-router-sync": "^4.0.1",
-    "index-vue-render": "^0.1.4"
+    "weex-vue-render": "^0.1.4"
   },
   "devDependencies": {
     "babel-core": "^6.20.0",
@@ -73,9 +73,9 @@ index-frame提供了，开源组件库OSC，降低开发者入门门槛~
     "vue-loader": "^10.0.2",
     "vue-template-compiler": "^2.1.8",
     "webpack": "^1.14.0",
-    "index-devtool": "^0.2.64",
-    "index-loader": "^0.4.1",
-    "index-vue-loader": "^0.2.5"
+    "weex-devtool": "^0.2.64",
+    "weex-loader": "^0.4.1",
+    "weex-vue-loader": "^0.2.5"
   }
 ```
 
@@ -111,14 +111,14 @@ webConfig.output.filename = 'web/[name].js'
 webConfig.module.loaders[1].loaders.push('vue')
 
 const weexConfig = getBaseConfig()
-weexConfig.output.filename = 'index/[name].js'
-weexConfig.module.loaders[1].loaders.push('index')
+weexConfig.output.filename = 'weex/[name].js'
+weexConfig.module.loaders[1].loaders.push('weex')
 ```
 
 ## 项目结构
 
 ```
-index-frame
+weex-frame
 ├── android (android项目)
 │       
 ├── ios （ios项目代码）
@@ -131,7 +131,7 @@ index-frame
 │      └── views（视图模块）  
 │
 └── dist （build输出模块）
-       ├── index (native使用jsbundle)
+       ├── weex (native使用jsbundle)
        └── web（web使用jsbundle） 
 ```
 
@@ -150,7 +150,7 @@ index-frame
 ```
 <osc-navpage
     :title="title"
-    leftItemSrc="https://gitlab.com/toonteam/index/raw/ce656f79084ed9db357f8abd76c6e6c82dc5a28d/src/views/person-info/imgs/back.png"
+    leftItemSrc="https://gitlab.com/toonteam/weex/raw/ce656f79084ed9db357f8abd76c6e6c82dc5a28d/src/views/person-info/imgs/back.png"
     rightItemSrc="http://gtms02.alicdn.com/tps/i2/TB1ED7iMpXXXXXEXXXXWA_BHXXX-48-48.png"
     @naviBarLeftItemClick="onBack"
     @naviBarRightItemClick="onReload">
@@ -194,15 +194,15 @@ index-frame
 
 ## 项目启动
 
-1. git clone git@github.com:osmartian/index-frame.git
-2. cd index-frame
+1. git clone git@github.com:osmartian/weex-frame.git
+2. cd weex-frame
 3. npm install
 4. 执行 ./start
 
 ### android 启动
 
 1. 打开andorid studio
-2. File -> New -> Import Project -> index-frame/android -> 启动
+2. File -> New -> Import Project -> weex-frame/android -> 启动
 
 或者：
 
@@ -221,7 +221,7 @@ npm run dev:android-local
 
 ### h5 启动方式
 
- 打开 [http://localhost:12580/index.html](http://localhost:12580/weex.html)
+ 打开 [http://localhost:12580/weex.html](http://localhost:12580/weex.html)
 
 ## 项目示例
 

@@ -132,7 +132,7 @@ webConfig.output.filename = 'web/[name].js'
 webConfig.module.loaders[1].loaders.push('vue')
 
 const weexConfig = getBaseConfig()
-weexConfig.output.filename = 'index/[name].js'
+weexConfig.output.filename = 'weex/[name].js'
 weexConfig.module.loaders[1].loaders.push('weex')
 
 module.exports = [webConfig, weexConfig]

@@ -4,7 +4,7 @@
     android:id="@+id/activity_network"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.siyuan.index.ui.page.WxIndexActivity">
+    tools:context="com.siyuan.weex.ui.page.WxIndexActivity">
 
     <FrameLayout
         android:id="@+id/container"

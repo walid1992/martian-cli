@@ -6,7 +6,7 @@
         v-for="(item, index) in tabItems"
         :key="index"
         :src="item.src"
-        type="index">
+        type="weex">
     </embed>
     <div class="tabbar" append="tree">
       <tabitem

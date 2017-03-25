@@ -35,7 +35,7 @@
 </style>
 
 <script>
-  import instance from 'utils/index/instance'
+  import instance from 'utils/weex/instance'
 
   export default {
     data () {

@@ -64,8 +64,8 @@
 	Vue.component('osc-scroller', __webpack_require__(35))
 
 	// 注册全局 module
-	// index.registerModule('api', require('utils/api'))
-	// index.registerModule('route', require('constants/route'))
+	// weex.registerModule('api', require('utils/api'))
+	// weex.registerModule('route', require('constants/route'))
 
 	App.el = '#root'
 	new Vue(App)
@@ -149,13 +149,13 @@
 	    if (matches && matches.length >= 2) {
 	      host = matches[1];
 	    }
-	    nativeBase = 'http://' + host + '/dist/index/';
+	    nativeBase = 'http://' + host + '/dist/weex/';
 	  }
-	  var h5Base = './index.html?page=./dist/web/';
+	  var h5Base = './weex.html?page=./dist/web/';
 	  // // in Browser or WebView
 	  var inBrowserOrWebView = (typeof window === 'undefined' ? 'undefined' : _typeof(window)) === 'object';
 	  return inBrowserOrWebView ? h5Base : nativeBase;
-	  // return inBrowserOrWebView ? './index.html?page=./dist/web/' : `http://${ip}:12580/dist/index/`
+	  // return inBrowserOrWebView ? './weex.html?page=./dist/web/' : `http://${ip}:12580/dist/weex/`
 	}
 
 	function pushWeb(url, params) {
@@ -548,7 +548,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-root.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-root.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -673,7 +673,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-navpage.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-navpage.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -849,7 +849,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-navbar.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-navbar.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -1083,7 +1083,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-tabbar.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-tabbar.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -1261,7 +1261,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-tabitem.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-tabitem.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -1471,7 +1471,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-list/index.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-list/index.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -1698,7 +1698,7 @@
 	/**
 	 * @author walid
 	 * @date 2017/3/4
-	 * @description index toast 工具类
+	 * @description weex toast 工具类
 	 */
 
 	var modal = weex.requireModule('modal');
@@ -1782,7 +1782,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-scroller/index.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-scroller/index.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -2075,7 +2075,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/views/mine/app.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/views/mine/app.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -2245,23 +2245,23 @@
 	      workPosition: 'web前端工程师',
 	      workDepartment: '思源总部/互联集团/应用引擎部',
 	      personInfoList: [{
-	        iconUrl: 'https://gitlab.com/toonteam/index/raw/f9492284d15c3d9ec79b72608768d20cf450cae9/src/views/mine/imgs/workbench_friends.png',
+	        iconUrl: 'https://gitlab.com/toonteam/weex/raw/f9492284d15c3d9ec79b72608768d20cf450cae9/src/views/mine/imgs/workbench_friends.png',
 	        name: '个人动态'
 	      }, {
-	        iconUrl: 'https://gitlab.com/toonteam/index/raw/f9492284d15c3d9ec79b72608768d20cf450cae9/src/views/mine/imgs/person-data.png',
+	        iconUrl: 'https://gitlab.com/toonteam/weex/raw/f9492284d15c3d9ec79b72608768d20cf450cae9/src/views/mine/imgs/person-data.png',
 	        name: '个人资料'
 	      }, {
-	        iconUrl: 'https://gitlab.com/toonteam/index/raw/f9492284d15c3d9ec79b72608768d20cf450cae9/src/views/mine/imgs/workbench_card_setting.png',
+	        iconUrl: 'https://gitlab.com/toonteam/weex/raw/f9492284d15c3d9ec79b72608768d20cf450cae9/src/views/mine/imgs/workbench_card_setting.png',
 	        name: '名片设置'
 	      }],
 	      groupInfoList: [{
-	        iconUrl: 'https://gitlab.com/toonteam/index/raw/f9492284d15c3d9ec79b72608768d20cf450cae9/src/views/mine/imgs/wallet_trade_data.png',
+	        iconUrl: 'https://gitlab.com/toonteam/weex/raw/f9492284d15c3d9ec79b72608768d20cf450cae9/src/views/mine/imgs/wallet_trade_data.png',
 	        name: '我的公司'
 	      }, {
-	        iconUrl: 'https://gitlab.com/toonteam/index/raw/f9492284d15c3d9ec79b72608768d20cf450cae9/src/views/mine/imgs/group_icon.png',
+	        iconUrl: 'https://gitlab.com/toonteam/weex/raw/f9492284d15c3d9ec79b72608768d20cf450cae9/src/views/mine/imgs/group_icon.png',
 	        name: '群组'
 	      }, {
-	        iconUrl: 'https://gitlab.com/toonteam/index/raw/f9492284d15c3d9ec79b72608768d20cf450cae9/src/views/mine/imgs/person-dynamic.png',
+	        iconUrl: 'https://gitlab.com/toonteam/weex/raw/f9492284d15c3d9ec79b72608768d20cf450cae9/src/views/mine/imgs/person-dynamic.png',
 	        name: '审批'
 	      }]
 	    };
@@ -2286,7 +2286,7 @@
 	    staticClass: ["img-bg-mine"],
 	    attrs: {
 	      "resize": "cover",
-	      "src": "https://gitlab.com/toonteam/index/raw/ce0c5f60531f1a0d676dedfa1f81c7e67e3151ed/src/views/mine/imgs/bg_basic_info_default.png"
+	      "src": "https://gitlab.com/toonteam/weex/raw/ce0c5f60531f1a0d676dedfa1f81c7e67e3151ed/src/views/mine/imgs/bg_basic_info_default.png"
 	    }
 	  }), _c('div', {
 	    staticClass: ["div-content"]
@@ -2299,7 +2299,7 @@
 	  }, [_vm._v("名片")]), _c('image', {
 	    staticClass: ["img-triangle"],
 	    attrs: {
-	      "src": "https://gitlab.com/toonteam/index/raw/f9492284d15c3d9ec79b72608768d20cf450cae9/src/views/mine/imgs/triangle.png"
+	      "src": "https://gitlab.com/toonteam/weex/raw/f9492284d15c3d9ec79b72608768d20cf450cae9/src/views/mine/imgs/triangle.png"
 	    }
 	  })]), _c('text', {
 	    staticClass: ["p-person-center"]
@@ -2354,7 +2354,7 @@
 	  }, [_c('image', {
 	    staticClass: ["img-add-item"],
 	    attrs: {
-	      "src": "https://gitlab.com/toonteam/index/raw/283827bfcf4aac59021a2c4c0572e27b98546627/src/views/mine/imgs/apply-blog.png"
+	      "src": "https://gitlab.com/toonteam/weex/raw/283827bfcf4aac59021a2c4c0572e27b98546627/src/views/mine/imgs/apply-blog.png"
 	    }
 	  }), _c('text', {
 	    staticClass: ["p-item"]
@@ -2363,14 +2363,14 @@
 	  }, [_c('image', {
 	    staticClass: ["img-add-item"],
 	    attrs: {
-	      "src": "https://gitlab.com/toonteam/index/raw/f9492284d15c3d9ec79b72608768d20cf450cae9/src/views/mine/imgs/beacon_add_key.png"
+	      "src": "https://gitlab.com/toonteam/weex/raw/f9492284d15c3d9ec79b72608768d20cf450cae9/src/views/mine/imgs/beacon_add_key.png"
 	    }
 	  }), _c('text', {
 	    staticClass: ["p-item"]
 	  }, [_vm._v("添加")])])])])]), _c('image', {
 	    staticClass: ["img-person"],
 	    attrs: {
-	      "src": "https://gitlab.com/toonteam/index/raw/44cab38bc97860112d963001ba9c9179c0365ee5/src/views/mine/imgs/person-img.jpg"
+	      "src": "https://gitlab.com/toonteam/weex/raw/44cab38bc97860112d963001ba9c9179c0365ee5/src/views/mine/imgs/person-img.jpg"
 	    }
 	  })])
 	},staticRenderFns: []}

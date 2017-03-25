@@ -1,9 +1,9 @@
-package com.siyuan.index.ui.page;
+package com.siyuan.weex.ui.page;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.siyuan.index.R;
+import com.siyuan.weex.R;
 import com.trello.rxlifecycle.android.ActivityEvent;
 import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 

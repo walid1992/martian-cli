@@ -64,8 +64,8 @@
 	Vue.component('osc-scroller', __webpack_require__(35))
 
 	// 注册全局 module
-	// index.registerModule('api', require('utils/api'))
-	// index.registerModule('route', require('constants/route'))
+	// weex.registerModule('api', require('utils/api'))
+	// weex.registerModule('route', require('constants/route'))
 
 	App.el = '#root'
 	new Vue(App)
@@ -139,7 +139,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-root.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-root.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -264,7 +264,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-navpage.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-navpage.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -440,7 +440,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-navbar.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-navbar.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -674,7 +674,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-tabbar.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-tabbar.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -852,7 +852,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-tabitem.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-tabitem.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -1062,7 +1062,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-list/index.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-list/index.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -1289,7 +1289,7 @@
 	/**
 	 * @author walid
 	 * @date 2017/3/4
-	 * @description index toast 工具类
+	 * @description weex toast 工具类
 	 */
 
 	var modal = weex.requireModule('modal');
@@ -1373,7 +1373,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-scroller/index.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-scroller/index.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -1670,7 +1670,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/views/scroller/app.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/views/scroller/app.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}

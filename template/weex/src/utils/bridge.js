@@ -4,8 +4,8 @@
  */
 
 let bridge
-__weex_define__('@index-temp/x', function (__weex_require__) {
-  bridge = __weex_require__('@index-module/bridge')
+__weex_define__('@weex-temp/x', function (__weex_require__) {
+  bridge = __weex_require__('@weex-module/bridge')
 })
 
 function jumpSendLivePage () {

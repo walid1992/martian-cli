@@ -64,8 +64,8 @@
 	Vue.component('osc-scroller', __webpack_require__(35))
 
 	// 注册全局 module
-	// index.registerModule('api', require('utils/api'))
-	// index.registerModule('route', require('constants/route'))
+	// weex.registerModule('api', require('utils/api'))
+	// weex.registerModule('route', require('constants/route'))
 
 	App.el = '#root'
 	new Vue(App)
@@ -149,13 +149,13 @@
 	    if (matches && matches.length >= 2) {
 	      host = matches[1];
 	    }
-	    nativeBase = 'http://' + host + '/dist/index/';
+	    nativeBase = 'http://' + host + '/dist/weex/';
 	  }
-	  var h5Base = './index.html?page=./dist/web/';
+	  var h5Base = './weex.html?page=./dist/web/';
 	  // // in Browser or WebView
 	  var inBrowserOrWebView = (typeof window === 'undefined' ? 'undefined' : _typeof(window)) === 'object';
 	  return inBrowserOrWebView ? h5Base : nativeBase;
-	  // return inBrowserOrWebView ? './index.html?page=./dist/web/' : `http://${ip}:12580/dist/index/`
+	  // return inBrowserOrWebView ? './weex.html?page=./dist/web/' : `http://${ip}:12580/dist/weex/`
 	}
 
 	function pushWeb(url, params) {
@@ -548,7 +548,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-root.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-root.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -673,7 +673,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-navpage.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-navpage.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -849,7 +849,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-navbar.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-navbar.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -1083,7 +1083,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-tabbar.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-tabbar.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -1261,7 +1261,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-tabitem.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-tabitem.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -1471,7 +1471,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-list/index.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-list/index.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -1698,7 +1698,7 @@
 	/**
 	 * @author walid
 	 * @date 2017/3/4
-	 * @description index toast 工具类
+	 * @description weex toast 工具类
 	 */
 
 	var modal = weex.requireModule('modal');
@@ -1782,7 +1782,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/components/osc-scroller/index.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/components/osc-scroller/index.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -2183,7 +2183,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/walid/Desktop/dev/index/index-frame/src/views/web/app.vue"
+	__vue_options__.__file = "/Users/walid/Desktop/dev/weex/weex-frame/src/views/web/app.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -2238,7 +2238,7 @@
 	    return {
 	      title: 'OsMartian - WebView',
 	      canGoBack: false,
-	      url: (0, _string.getQueryStringByName)('url') || 'https://index-project.io/cn/'
+	      url: (0, _string.getQueryStringByName)('url') || 'https://weex-project.io/cn/'
 	    };
 	  },
 
@@ -2269,7 +2269,7 @@
 	  return _c('osc-navpage', {
 	    attrs: {
 	      "title": _vm.title,
-	      "leftItemSrc": "https://gitlab.com/toonteam/index/raw/ce656f79084ed9db357f8abd76c6e6c82dc5a28d/src/views/person-info/imgs/back.png",
+	      "leftItemSrc": "https://gitlab.com/toonteam/weex/raw/ce656f79084ed9db357f8abd76c6e6c82dc5a28d/src/views/person-info/imgs/back.png",
 	      "rightItemSrc": "http://gtms02.alicdn.com/tps/i2/TB1ED7iMpXXXXXEXXXXWA_BHXXX-48-48.png"
 	    },
 	    on: {

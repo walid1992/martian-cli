@@ -1,4 +1,4 @@
-package com.siyuan.index.index;
+package com.siyuan.weex.weex;
 
 import android.net.Uri;
 import android.text.TextUtils;
@@ -6,10 +6,10 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
-import com.taobao.index.WXEnvironment;
-import com.taobao.index.adapter.IWXImgLoaderAdapter;
-import com.taobao.index.common.WXImageStrategy;
-import com.taobao.index.dom.WXImageQuality;
+import com.taobao.weex.WXEnvironment;
+import com.taobao.weex.adapter.IWXImgLoaderAdapter;
+import com.taobao.weex.common.WXImageStrategy;
+import com.taobao.weex.dom.WXImageQuality;
 
 /**
  * @Author : Hanks

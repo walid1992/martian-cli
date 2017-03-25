@@ -1,4 +1,4 @@
-package com.siyuan.index.index.constants;
+package com.siyuan.weex.weex.constants;
 
 /**
  * @Author : walid
@@ -10,8 +10,8 @@ public class Constants {
 
     public static final String INDEX_URL = IpConfig.INDEX_URL;
 
-    public static final String BUNDLE_URL = "http://h5.m.taobao.com?_wx_tpl=http://g.tbcdn.cn/index/index-tc/0.1.2/build/TC__Home.js";
-    public static final String WEEX_SAMPLES_KEY = "?index-samples";
+    public static final String BUNDLE_URL = "http://h5.m.taobao.com?_wx_tpl=http://g.tbcdn.cn/weex/weex-tc/0.1.2/build/TC__Home.js";
+    public static final String WEEX_SAMPLES_KEY = "?weex-samples";
     public static final String WEEX_TPL_KEY = "_wx_tpl";
 
     //hot refresh

@@ -52,7 +52,7 @@
 
 <script>
   import toast from 'utils/modules/toast'
-  import instance from 'utils/index/instance'
+  import instance from 'utils/weex/instance'
 
   export default {
     data() {

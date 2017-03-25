@@ -202,7 +202,7 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
-package com.siyuan.index.index;
+package com.siyuan.weex.weex;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
@@ -210,7 +210,7 @@ import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
 
-import com.taobao.index.WXSDKInstance;
+import com.taobao.weex.WXSDKInstance;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
@@ -237,7 +237,7 @@ public final class WXAnalyzerDelegate {
             return;
         }
         try {
-            Class clazz = Class.forName("com.taobao.index.analyzer.WeexDevOptions");
+            Class clazz = Class.forName("com.taobao.weex.analyzer.WeexDevOptions");
             Constructor constructor = clazz.getDeclaredConstructor(Context.class);
             mWXAnalyzer = constructor.newInstance(context);
         } catch (Exception e) {
