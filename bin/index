@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+const xtoolkit = require('xtoolkit')
+xtoolkit.command('init:weex', 'local:../src/init/weex/index.js')
+xtoolkit.version(require('../package.json').version)
