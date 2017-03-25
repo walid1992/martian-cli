@@ -1,6 +1,6 @@
 # Martian Template
 
-Weex template for [martian-cli](https://github.com/osmartian/martian-cli.git).
+Frame template for [martian-cli](https://github.com/osmartian/martian-cli.git).
 
 ## Usage
 
@@ -9,15 +9,17 @@ Weex template for [martian-cli](https://github.com/osmartian/martian-cli.git).
 npm install -g martian-cli
 
 ```
-## Start a Weex Project.
+
+1. init a weex project.
 
 ```
-vue init <project-name>
+martian init:weex <project-name>
 ```
 
-## Start a Vue Project.
+2、 init a vue project.
 
 ```
-vue init <project-name>
+// 暂不支持
+martian init:vue <project-name>
 
 ```

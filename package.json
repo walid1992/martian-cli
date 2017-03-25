@@ -1,6 +1,6 @@
 {
   "name": "martian-cli",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "description": "Martian Cli 初始化框架工具",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -36,6 +36,6 @@
     "gulp-rename": "^1.2.2"
   },
   "bin": {
-    "martian-cli": "bin/index"
+    "martian": "bin/index"
   }
 }
