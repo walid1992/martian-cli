@@ -94,7 +94,7 @@ function copy(name, dirpath) {
  * @param dirpath
  */
 function replace(name, dirpath) {
-  const files = ['package.json', 'README.md']
+  const files = ['package.json', 'README.md', 'weex.html']
   files.forEach(file => {
     let filePath = path.join(dirpath, file)
     let content = fs.readFileSync(filePath, {

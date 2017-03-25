@@ -1,7 +1,7 @@
 {
   "name": "martian-cli",
-  "version": "0.0.8",
-  "description": "Martian Cli 初始化框架工具",
+  "version": "0.0.9",
+  "description": "Martian Cli 初始化框架项目工具",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp"

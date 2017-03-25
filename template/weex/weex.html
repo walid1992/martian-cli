@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>WeexFrame</title>
+  <title>{{ name }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -16,10 +16,9 @@
 </head>
 <body>
 <div id="root"></div>
-<!--<script src="./dist/web/App.js"></script>-->
 <script>
   (function () {
-    function getUrlParam (key) {
+    function getUrlParam(key) {
       let reg = new RegExp('[?|&]' + key + '=([^&]+)')
       let match = location.search.match(reg)
       return match && match[1]

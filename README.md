@@ -22,27 +22,27 @@ $ npm install -g martian-cli
 Usage: martian init:weex [projectName]
 ```
 
-### 项目结构
+一、 项目结构
 
 ```
 weex-frame
 ├── android (android项目)
 │       
-├── ios （ios项目代码）
+├── ios (ios项目代码)
 │
-├── src （weex模块）
+├── src (weex模块)
 │      ├── api (api模块)
-│      ├── components（组件模块） 
-│      ├── constants（常量配置）   
-│      ├── utils （工具模块）   
-│      └── views（视图模块）  
+│      ├── components (组件模块) 
+│      ├── constants (常量配置)   
+│      ├── utils (工具模块)   
+│      └── views (视图模块)  
 │
-└── dist （build输出模块）
+└── dist (build输出模块)
        ├── weex (native使用jsbundle)
-       └── web（web使用jsbundle） 
+       └── web (web使用jsbundle) 
 ```
 
-### 项目启动
+二、 项目启动
 
 ```
 ./start
@@ -71,3 +71,40 @@ npm run dev:android-local
 3、 h5 启动方式
 
 * 打开 [http://localhost:12580/weex.html](http://localhost:12580/weex.html)
+
+## init vue
+
+```
+Usage: martian init:weex [projectName]
+```
+
+一、 项目结构
+
+```
+weex-frame
+│
+├── build (webpack 打包配置)
+│       
+├── config (环境配置)
+│
+├── test (测试模块)
+│
+└── src (主业务)
+    │
+    ├── api (api模块)
+    ├── assets (api模块)
+    ├── components（组件模块） 
+    ├── pages （界面）
+    ├── router (路由)
+    ├── store （vuex）
+    └── utils (工具模块)   
+
+```
+
+二、 项目启动
+
+```
+npm run dev
+```
+
+* 打开 [http://localhost:8080/](http://localhost:8080/)
