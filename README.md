@@ -5,7 +5,7 @@
 
 # Martian Template
 
-Frame template for [martian-cli](https://github.com/osmartian/martian-cli.git).
+Frame template for [weex-frame](https://github.com/walid992/weex-frame.git)、[vue-frame](https://github.com/odysseyteam/vue-frame.git) .
 
 
 # Install
