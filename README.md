@@ -75,7 +75,7 @@ npm run dev:android-local
 ## init vue
 
 ```
-Usage: martian init:weex [projectName]
+Usage: martian init:vue [projectName]
 ```
 
 一、 项目结构
