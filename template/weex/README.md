@@ -48,4 +48,10 @@ weexpack run ios
 
 ### h5 启动方式
 
- 打开 [http://localhost:12580/web/index.html?page=./dist/web/App.js](http://localhost:12580/web/index.html?page=./dist/web/App.js)
+打开 [http://localhost:8080/web/index.html?page=./dist/web/App.js](http://localhost:8080/web/index.html?page=./dist/web/App.js)
+
+或者：
+
+```
+weexpack run web
+```
