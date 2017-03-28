@@ -10,7 +10,7 @@ const path = require('path')
 const chalk = require('chalk')
 
 exports.generate = function (name) {
-  if (typeof(name) == 'undefined') {
+  if (typeof(name) === 'undefined') {
     const dirname = path.resolve('.').split(path.sep).pop()
     getName(dirname, chalk.green('Generate project in current directory?(Y/n)'), (err, result) => {
       if (result.name.toLowerCase() === 'n') {
@@ -55,7 +55,7 @@ function getName(name, message = "Project Name", done) {
 function createProject(name, dirpath) {
   fs.mkdir(dirpath, 484, function (err) {
     if (err) {
-      if (err.code == 'EEXIST') {
+      if (err.code === 'EEXIST') {
         return console.log(chalk.red('the folder "' + name + '" exists! Please rename your project.'))
       } else {
         console.error(err)
@@ -94,7 +94,7 @@ function copy(name, dirpath) {
  * @param dirpath
  */
 function replace(name, dirpath) {
-  const files = ['package.json', 'README.md', 'weex.html']
+  const files = ['package.json', 'README.md', 'index.html']
   files.forEach(file => {
     let filePath = path.join(dirpath, file)
     let content = fs.readFileSync(filePath, {
