@@ -45,8 +45,19 @@ weex-frame
 二、 项目启动
 
 ```
+// 1、 安装weexpack
+npm install -g weexpack
+// 2、 安装依赖
+npm install
+// 3、 启动serve
 ./start
+// 4、设置调试环境
+// 调试本地serve
+npm run init serve
+// 调试assets或者jsbundle文件
+npm run init local
 ```
+
 
 1、 android 启动
 
@@ -56,10 +67,7 @@ weex-frame
 或者：
 
 ```
-// 设置 android 从服务器端去读数据项目
-npm run dev:android
-// 设置 android 从本地去读数据项目（copy jsbundle 至assets）
-npm run dev:android-local
+weexpack run android
 ```
 
 2、 iOS 启动
@@ -68,9 +76,21 @@ npm run dev:android-local
 * pod install (未安装pod，请先安装)
 * open WeexFrame.xcworkspace
 
+或者：
+
+```
+weexpack run ios
+```
+
 3、 h5 启动方式
 
-* 打开 [http://localhost:12580/weex.html](http://localhost:12580/weex.html)
+* 打开 [http://localhost:8080/web/index.html](http://localhost:8080/web/index.html)
+
+或者：
+
+```
+weexpack run web
+```
 
 ## init vue
 
