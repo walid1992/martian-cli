@@ -51,7 +51,7 @@
 </style>
 
 <script>
-  import toast from 'utils/modules/toast'
+  import model from 'utils/modules/model'
   import instance from 'utils/weex/instance'
 
   export default {
@@ -77,27 +77,37 @@
     mounted () {
       this.$on('refreshDone', (e) => {
         this.refreshDisplay = 'hide'
-        toast.show({
+        model.toast({
           message: '刷新数据成功~'
         })
       })
 
       this.$on('loadingDone', (e) => {
         this.loadingDisplay = 'hide'
-        toast.show({
+        model.toast({
           message: '刷新数据成功~'
         })
       })
     },
 
     methods: {
+      onReset() {
+        setTimeout(() => {
+          this.refreshPause = false
+          this.refreshDisplay = 'hide'
+          this.loadingPause = false
+          this.loadingDisplay = 'hide'
+        }, 1000)
+      },
+
       onRefresh (e) {
+        this.refreshDisplay = 'show'
         if (this.refreshPause) {
+          this.onReset()
           return
         }
-        this.$emit('refresh', e)
         this.refreshPause = true
-        this.refreshDisplay = 'show'
+        this.$emit('refresh', e)
         // 三秒之内只允许一次加载
         setTimeout(() => {
           this.refreshPause = false
@@ -105,9 +115,8 @@
         // 十秒超时
         setTimeout(() => {
           if (this.refreshDisplay === 'show') {
-            this.refreshDisplay = 'hide'
-            this.refreshPause = true
-            toast.show({
+            this.onReset()
+            model.toast({
               message: '网络请求超时~'
             })
           }
@@ -115,12 +124,13 @@
       },
 
       onLoading (e) {
+        this.loadingDisplay = 'show'
         if (this.loadingPause) {
+          this.onReset()
           return
         }
-        this.$emit('loading', e)
         this.loadingPause = true
-        this.loadingDisplay = 'show'
+        this.$emit('loading', e)
         // 三秒之内只允许一次加载
         setTimeout(() => {
           this.loadingPause = false
@@ -128,9 +138,8 @@
         // 十秒超时
         setTimeout(() => {
           if (this.loadingDisplay === 'show') {
-            this.loadingPause = true
-            this.loadingDisplay = 'hide'
-            toast.show({
+            this.onReset()
+            model.toast({
               message: '网络请求超时~'
             })
           }

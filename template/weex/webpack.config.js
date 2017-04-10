@@ -15,7 +15,8 @@ const bannerPlugin = new webpack.BannerPlugin(
 )
 
 function getEntryFileContent(entryPath, vueFilePath) {
-  const relativePath = path.relative(path.join(entryPath, '../'), vueFilePath);
+  let relativePath = path.relative(path.join(entryPath, '../'), vueFilePath);
+  // relativePath = relativePath.replace(/\/ig/, '/')
   return `
 /**
  * @author walid
@@ -25,7 +26,7 @@ function getEntryFileContent(entryPath, vueFilePath) {
 
 const App = require("${relativePath}")
 
-// 注册全局 component
+// 全局注册组件
 Vue.component('osc-root', require("components/osc-root"))
 Vue.component('osc-navpage', require("components/osc-navpage"))
 Vue.component('osc-navbar', require("components/osc-navbar"))
@@ -33,18 +34,12 @@ Vue.component('osc-tabbar', require("components/osc-tabbar"))
 Vue.component('osc-list', require("components/osc-list"))
 Vue.component('osc-scroller', require("components/osc-scroller"))
 
-// 注册全局 module
-// weex.registerModule('api', require('utils/api'))
-// weex.registerModule('route', require('constants/route'))
-
 App.el = '#root'
 new Vue(App)
 `
 }
 
-const entry = {
-  // entry: path.resolve('./src/entry.js')
-}
+const entry = {}
 
 function walk(dir) {
   dir = dir || '.'
@@ -88,6 +83,7 @@ function getBaseConfig() {
         'router': path.resolve(__dirname, './src/router/'),
         'store': path.resolve(__dirname, './src/store/'),
         'views': path.resolve(__dirname, './src/views/'),
+        'mixins': path.resolve(__dirname, './src/mixins'),
         'config': path.resolve(__dirname, './config'),
         'utils': path.resolve(__dirname, './src/utils/')
       }
@@ -128,7 +124,13 @@ function getBaseConfig() {
 }
 
 const webConfig = getBaseConfig()
-webConfig.output.filename = 'web/[name].js'
+webConfig.entry = {
+  entry: path.resolve('./src/entry.js')
+}
+webConfig.output = {
+  path: 'dist/web',
+  filename: '[name].js'
+}
 webConfig.module.loaders[1].loaders.push('vue')
 
 const weexConfig = getBaseConfig()
