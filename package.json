@@ -1,6 +1,6 @@
 {
   "name": "martian-cli",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Martian Cli 初始化框架项目工具",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
