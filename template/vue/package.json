@@ -1,8 +1,8 @@
 {
-  "name": "vue-frame1",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "wangyongdi <wangyongdi@syswin.com>",
+  "description": "{{ description }}",
+  "author": "walid <541280314@qq.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
