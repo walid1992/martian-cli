@@ -15,7 +15,7 @@
       })
     },
 
-    created() {
+    created () {
       this.$store.registerModule('childModule', {
         modules: {
           child
@@ -23,7 +23,7 @@
       })
     },
 
-    destroyed() {
+    destroyed () {
       this.$store.unregisterModule('childModule')
     },
 
@@ -33,11 +33,11 @@
         updateLogo: globalTypes.actions.updateLogo
       }),
 
-      updateGlobal() {
+      updateGlobal () {
         this.updateLogo('更新 global logo')
       },
 
-      updateChild() {
+      updateChild () {
         this.updateData('更新child data')
       }
     }

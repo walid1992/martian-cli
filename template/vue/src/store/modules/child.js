@@ -11,13 +11,13 @@ const state = {
 }
 
 const mutations = {
-  [types.mutations.data](state, payload) {
+  [types.mutations.data] (state, payload) {
     state.data = payload
   }
 }
 
 const actions = {
-  [types.actions.updateData]({commit, state}, payload) {
+  [types.actions.updateData] ({commit, state}, payload) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         commit(types.mutations.data, payload)
@@ -27,7 +27,7 @@ const actions = {
 }
 
 const getters = {
-  [types.getters.data](state) {
+  [types.getters.data] (state) {
     return state.data
   }
 }

@@ -4,6 +4,6 @@
  * @description
  */
 
-export default function plugin(Vue) {
+export default function plugin (Vue) {
 
 }

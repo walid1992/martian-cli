@@ -20,7 +20,7 @@
         default: {}
       }
     },
-    mounted() {
+    mounted () {
       new QArt({
         value: this.config.value,
         imagePath: this.config.imagePath || require('./imgs/logo.png'),

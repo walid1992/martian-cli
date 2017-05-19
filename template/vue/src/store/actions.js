@@ -7,7 +7,7 @@
 import {global as types} from './mutationTypes'
 
 export default {
-  [types.actions.updateLogo]({commit}, payload) {
+  [types.actions.updateLogo] ({commit}, payload) {
     commit(types.mutations.logo, payload)
   }
 }

@@ -50,7 +50,7 @@ Axios.interceptors.response.use(response => {
  * @param url
  * @param params --> GET 请求参数（***?name=walid&age=25）
  */
-function get(url, params) {
+function get (url, params) {
   return new Call((resolve, reject) => {
     Axios.get(url, {params: params})
       .then(response => {
@@ -67,7 +67,7 @@ function get(url, params) {
  * @param url
  * @param body --> POST 请求 data
  */
-function post(url, body) {
+function post (url, body) {
   return new Call((resolve, reject) => {
     Axios.post(url, body)
       .then(response => {

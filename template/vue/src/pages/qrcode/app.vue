@@ -26,7 +26,6 @@
 
 <script>
   import VueQArt from 'components/qrcode'
-  import QArt from 'qartjs'
 
   export default {
     components: {

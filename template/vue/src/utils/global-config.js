@@ -7,7 +7,7 @@
 import api from 'api'
 import routerName from 'router/name'
 
-export default function plugin(Vue) {
+export default function plugin (Vue) {
   Vue.$api = Vue.prototype.$api = api
   Vue.$routerName = Vue.prototype.$routerName = routerName
 }
